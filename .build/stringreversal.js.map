@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../stringreversal.ts"],
+  "sourcesContent": ["\n\n\n\n\nfunction reverse(word:string) {\n  const wordArr = word.split(\"\");\n  const newArr = [];\nfor (let i = wordArr.length-1; i >= 0; i--) {\n  newArr.push(wordArr[i])\n}\n  console.log(newArr.join(\"\"))\n  \n}\n\nreverse(\"Hellow\");\n"],
+  "mappings": "AAKA,iBAAiB,MAAa;AAC5B,QAAM,UAAU,KAAK,MAAM;AAC3B,QAAM,SAAS;AACjB,WAAS,IAAI,QAAQ,SAAO,GAAG,KAAK,GAAG,KAAK;AAC1C,WAAO,KAAK,QAAQ;AAAA;AAEpB,UAAQ,IAAI,OAAO,KAAK;AAAA;AAI1B,QAAQ;",
+  "names": []
+}

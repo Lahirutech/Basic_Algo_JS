@@ -1,16 +1,11 @@
-
-
-
-
-
-function reverse(word:string) {
-  const wordArr = word.split("");
-  const newArr = [];
-for (let i = wordArr.length-1; i >= 0; i--) {
-  newArr.push(wordArr[i])
+function checkpalingDrom(check:string){
+  let arr=check.split("")
+  let newArr=[]
+  for (let index = arr.length; index >= 0; index--) {
+    newArr.push(arr[index])
+  }
+  var final =newArr.join("")
+  console.log(final)
+  return final == check
 }
-  console.log(newArr.join(""))
-  
-}
-
-reverse("Hellow");
+console.log(checkpalingDrom("aba"))

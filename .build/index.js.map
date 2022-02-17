@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../index.ts"],
-  "sourcesContent": ["\n\n\n\n\nfunction reverse(word:string) {\n  const wordArr = word.split(\"\");\n  const newArr = [];\nfor (let i = wordArr.length-1; i >= 0; i--) {\n  newArr.push(wordArr[i])\n}\n  console.log(newArr.join(\"\"))\n  \n}\n\nreverse(\"Hellow\");\n"],
-  "mappings": "AAKA,iBAAiB,MAAa;AAC5B,QAAM,UAAU,KAAK,MAAM;AAC3B,QAAM,SAAS;AACjB,WAAS,IAAI,QAAQ,SAAO,GAAG,KAAK,GAAG,KAAK;AAC1C,WAAO,KAAK,QAAQ;AAAA;AAEpB,UAAQ,IAAI,OAAO,KAAK;AAAA;AAI1B,QAAQ;",
+  "sourcesContent": ["function checkpalingDrom(check:string){\n  let arr=check.split(\"\")\n  let newArr=[]\n  for (let index = arr.length; index >= 0; index--) {\n    newArr.push(arr[index])\n  }\n  var final =newArr.join(\"\")\n  console.log(final)\n  return final == check\n}\nconsole.log(checkpalingDrom(\"aba\"))\n"],
+  "mappings": "AAAA,yBAAyB,OAAa;AACpC,MAAI,MAAI,MAAM,MAAM;AACpB,MAAI,SAAO;AACX,WAAS,QAAQ,IAAI,QAAQ,SAAS,GAAG,SAAS;AAChD,WAAO,KAAK,IAAI;AAAA;AAElB,MAAI,QAAO,OAAO,KAAK;AACvB,UAAQ,IAAI;AACZ,SAAO,SAAS;AAAA;AAElB,QAAQ,IAAI,gBAAgB;",
   "names": []
 }

@@ -1,10 +1,12 @@
-function reverse(word) {
-  const wordArr = word.split("");
-  const newArr = [];
-  for (let i = wordArr.length - 1; i >= 0; i--) {
-    newArr.push(wordArr[i]);
+function checkpalingDrom(check) {
+  let arr = check.split("");
+  let newArr = [];
+  for (let index = arr.length; index >= 0; index--) {
+    newArr.push(arr[index]);
   }
-  console.log(newArr.join(""));
+  var final = newArr.join("");
+  console.log(final);
+  return final == check;
 }
-reverse("Hellow");
+console.log(checkpalingDrom("aba"));
 //# sourceMappingURL=index.js.map
